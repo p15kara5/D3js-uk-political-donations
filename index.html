@@ -37,9 +37,16 @@
 
     <header role="banner" id="title">
         <h1>Who's funding the big three?</h1>
+        
+         <script>
+            var sound_when_press_button = new Audio();
+            sound_when_press_button.src = "soundbutton.mp3";
+        </script>
+        
+        
     </header>
     <nav role="navigation">
-        <ul>
+        <ul onmousedown="sound_when_press_button.play()">
             <li><a href="#" role="button" class="pure-button switch" id="all-donations">All money</a>
             </li>
             <li><a href="#" role="button" class="pure-button switch" id="group-by-money-source">The public's purse</a>
